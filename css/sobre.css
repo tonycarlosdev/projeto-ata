@@ -1,0 +1,32 @@
+.interna_sobre {
+  width: 100%;
+  height: 380px;
+  background: url('../img/bg-sobre.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 92px; 
+}
+
+.missao_sobre {
+  padding: 60px 0 0 0;
+}
+
+.missao_sobre p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1em;
+  padding-right: 60px;
+}
+
+.missao_sobre ul li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.foto-frota {
+  padding-top: 20px;
+}
+
+.foto-frota img {
+  border-radius: 15px;
+}

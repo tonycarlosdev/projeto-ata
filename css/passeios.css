@@ -1,0 +1,140 @@
+/*.interna_passeios {
+  width: 100%;
+  height: 380px;
+  background: url("../img/bg-passeios.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+}
+
+.passeios_destinos h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #1E39FC;
+  letter-spacing: .1em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.passeios_destinos h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 6px auto 10px auto;
+}
+*/ 
+.interna_passeios {
+  width: 100%;
+  height: 380px;
+  background: url("../img/bg-passeios.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+}
+
+.passeios_destinos h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #1E39FC;
+  letter-spacing: .1em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -80px;
+}
+
+.passeios_destinos h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 6px auto 10px auto;
+}
+
+
+.container_cards {
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container_cards img {
+  border-radius: 15px;
+}
+
+.card {
+  border-radius: 15px;
+  position: relative;
+  margin: 20px 5px;
+  width: 479px;
+  height: 310px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+
+.card:hover {
+  z-index: 1000;
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+}
+
+.card .imgBox {
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+  height: 100%;  
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.card:hover .imgBox {
+  transform: rotateY(-135deg);
+}
+
+.card .imgBox .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .detalhes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.quebra_passeios {
+  width: 100%;
+  height: 220px;
+  background: url("../img/quebra-passeios1.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 60px;
+}
+.quebra_passeios .quote-externo {
+  max-width: 400px;
+  color: #1E39FC;
+}
+
+.quote-externo.quote-branco p::before, .quote-externo.quote-branco p::after {  
+  background: #1E39FC;
+  
+}
+
+
+

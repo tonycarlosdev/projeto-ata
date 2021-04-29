@@ -1,0 +1,440 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  border: 3px solid #1E39FC;
+  border-radius: 25px;
+  padding: 10px 21px;
+  color: #1E39FC;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;  
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #9ADCFF;
+  border-color: #1E39FC;
+}
+
+.btn.btn-contraste:hover {
+  background-color: #fec63e;
+  color: #1E39FC;
+  border-color: #1E39FC;  
+}
+.eventos, .btn.btn-contraste:hover {
+  color: #fff;
+  background-color: #9ADCFF;
+  border-color: #1E39FC;
+}
+
+.subtitulo {
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: #1E39FC;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 10px auto ;
+}
+
+.subtitulo-interno {
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: #1E39FC;
+  text-transform: uppercase;  
+  margin-bottom: 20px;
+}
+
+.subtitulo-interno::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 10px 0;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;  
+  background: #fec63e;
+  padding: 15px 0;
+  z-index: 10;
+}
+
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 35px;
+  margin-top: 45px;
+}
+
+.header_menu ul li a {
+  color: #1E39FC;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 14px 0;  
+}
+
+.header_menu ul li a:hover {
+  color: #fff;
+  transition: .4s;  
+}
+
+.header_menu ul li a.menu_ativo {
+  color: #fff;
+}
+
+
+/* Solução para o logo - provisório */
+.container a img {
+  border-radius: 60px;
+}
+/* Fim solução logo */
+
+/* Introdução */
+.introducao {
+  width: 100%;
+  height: 580px;
+  background: url("../img/bg1.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 150px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: rgba(30, 57, 252, .9);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: cursive;  
+}
+
+/* Introdução interna */
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;  
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.introducao-interna h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao-interna h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 6px auto 10px auto;
+}
+
+.quote-externo {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  color: #1E39FC;
+}
+
+.quote-externo p {
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quote-externo p::before, .quote-externo p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 5px auto 5px auto;
+}
+
+/* Serviços */
+.passeios {
+  padding: 80px 0;
+}
+
+.passeios_lista li {
+  background: #9ADCFF;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+
+.passeios_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E39FC;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 15px;
+}
+
+.passeios_lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 2px auto ;
+}
+
+.passeios_lista li p {
+  color: #1E39FC;
+  font-weight: bold;
+  padding: 10px 20px 0 20px;
+}
+
+.passeios_lista img {
+  border-radius: 15px 15px 0 0;
+}
+
+.call {
+  padding-top: 50px;
+  text-align: center;
+  clear: both;  
+}
+
+.call p {
+  margin-bottom: 20px;
+  color: #1E39FC;
+  font-weight: bold;
+}
+
+/* Eventos */
+.eventos {
+  width: 100%;
+  background: #9ADCFF;
+  padding: 60px 0;
+}
+
+.eventos_lista li:last-child {
+  margin-top: 20px;
+}
+
+.eventos .call p {
+  color: #1E39FC;
+  font-weight: bold;
+}
+
+.eventos .call .btn {
+  color: #1E39FC;
+  border-color: #1E39FC;
+}
+
+.eventos .call .btn:hover {
+  color: #fff;
+  border-color: #fff;
+  
+}
+
+.eventos_lista li img {
+  border-radius: 15px;
+}
+
+/* Sobre */
+.sobre {
+  padding: 60px 0;
+  margin-top: 40px;
+}
+
+.sobre img {
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.sobre_lista {
+  padding-top: 30px;
+  overflow: auto; /*clear fix*/
+}
+
+.sobre_lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.sobre_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E39FC;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 15px;
+}
+
+.sobre_lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 8px auto ;
+}
+
+.sobre .call .btn {
+  padding: 10px 35px;
+  letter-spacing: .2em;
+}
+
+/* Quebra */
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/por-do-sol-balsa.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.quebra .quote-externo {
+  max-width: 400px;
+  color: #fff;
+}
+
+.quote-externo.quote-branco p::before, .quote-externo.quote-branco p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto 5px auto;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #9ADCFF;
+  color: #1E39FC;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E39FC;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1E39FC;
+  margin: 6px 0 12px 0;
+}
+
+.footer_história {
+  padding-right: 40px;
+  }
+
+.footer_história p {
+  font-weight: bold;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_redes ul li a {
+  display: block;
+  border: 3px solid #1E39FC;
+  border-radius: 15px;
+  padding: 3px;
+}
+
+.footer_redes ul li a:hover {
+  border-color: #fff;
+}
+
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 20px
+}
+
+/*JavaScript*/
+[data-slide] {
+  position: relative;
+}
+[data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+[data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
